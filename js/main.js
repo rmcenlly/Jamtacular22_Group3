@@ -16,7 +16,7 @@ function setup() {
 function draw() {
   player.draw(balls);
   level.draw(balls);
-  balls.draw();
+  // balls.draw();
 
   background("grey");
   drawSprites();
