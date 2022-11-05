@@ -11,6 +11,7 @@ function preload() {
     cloud1 = loadImage('../assets/img/Clouds/cloud1.png');
     cloud2 = loadImage('../assets/img/Clouds/cloud2.png');
     cloud3 = loadImage('../assets/img/Clouds/cloud3.png');
+    cloud4 = loadImage('../assets/img/Clouds/cloud4.png');
 }
 
 function setup() {
