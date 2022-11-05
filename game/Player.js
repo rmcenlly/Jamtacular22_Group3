@@ -2,7 +2,7 @@ class Player{
     constructor(){
         this.sprite
         this.start={
-            x:W/8,
+            x:W/12,
             y:3 * H/4
         }
         this.w=30;
@@ -11,9 +11,11 @@ class Player{
     controls(){
         if(keyIsDown(KEYS.A)){
             this.goLeft()
+            playerPosition--;
         }
         if(keyIsDown(KEYS.D)){
             this.goRight()
+            playerPosition++;
         }
         if (keyIsDown(KEYS.UP)) {
             this.goUp()
