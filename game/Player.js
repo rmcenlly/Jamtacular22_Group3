@@ -25,16 +25,16 @@ class Player{
         }
     }
     goLeft(){
-        this.sprite.velocity.x-=3
+        this.sprite.velocity.x -= playerSpeed;
     }
     goRight(){
-        this.sprite.velocity.x+=3
+        this.sprite.velocity.x += playerSpeed
     }
     goUp(){
-        this.sprite.velocity.y -= 3;
+        this.sprite.velocity.y -= playerSpeed;
     }
     goDown(){
-        this.sprite.velocity.y += 3;
+        this.sprite.velocity.y += playerSpeed;
     }
     setup(){
         this.sprite=this.makePaddle(this.start.x,this.start.y,this.w, this.h)

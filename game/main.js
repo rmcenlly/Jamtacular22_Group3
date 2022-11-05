@@ -6,6 +6,8 @@ let playerPosition = 0;
 
 let road, cloud1, cloud2, cloud3, cloud4;
 
+let playerSpeed = 10;
+
 function preload() {
     road = loadImage('../assets/img/stone_walk.png');
     cloud1 = loadImage('../assets/img/Clouds/cloud1.png');
@@ -23,35 +25,31 @@ function setup() {
 
 function draw() {
     clear();
-    drawBorders();
 
     drawStaticBackground();
 
-    player.draw();
-    player.sprite.collide(rightBorder, scrollRight)
-    player.sprite.collide(leftBorder, scrollLeft)
-    player.sprite.collide(borders)
+    drawBorders();
 
+    player.draw();
 
     drawSprites();
 
     drawDynamicBackground();
-    leftBorder.remove();    
-    rightBorder.remove();
-    topBorder.remove();
-    bottomBorder.remove();
+
+    removeBorders();
 }
 
 function scrollRight() {
-    if (keyIsDown(KEYS.D)) {
-        camera.position.x+=3;
-        groundPosition+=3;
+    if (keyIsDown(KEYS.D) && groundPosition < 900) {
+        camera.position.x += playerSpeed;
+        groundPosition += playerSpeed;
     }
 }
 
 function scrollLeft() {
     if (keyIsDown(KEYS.A) && groundPosition > 0) {
-        camera.position.x-=3;
-        groundPosition-=3;
+        camera.position.x -= playerSpeed;
+        groundPosition -= playerSpeed;
+        console.log("collideLeft")
     }
 }
