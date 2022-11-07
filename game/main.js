@@ -2,6 +2,10 @@ let width, height;
 
 let player = new Player();
 
+let playerWalk;
+let playerIdle;
+
+
 let playerPosition = 0;
 
 let road, cloud1, cloud2, cloud3, cloud4;
@@ -14,6 +18,18 @@ function preload() {
     cloud2 = loadImage('../assets/img/Clouds/cloud2.png');
     cloud3 = loadImage('../assets/img/Clouds/cloud3.png');
     cloud4 = loadImage('../assets/img/Clouds/cloud4.png');
+
+
+
+    playerWalk = loadAnimation(
+    '../assets/img/PlayerSprites/Walk/walk1.png',
+    '../assets/img/PlayerSprites/Walk/walk2.png',
+    '../assets/img/PlayerSprites/Walk/walk3.png',
+    '../assets/img/PlayerSprites/Walk/walk4.png',
+    '../assets/img/PlayerSprites/Walk/walk5.png',
+    '../assets/img/PlayerSprites/Walk/walk6.png')
+
+    playerIdle = loadImage('../assets/img/PlayerSprites/Idle/idle.png');
 }
 
 function setup() {
@@ -32,11 +48,15 @@ function draw() {
 
     player.draw();
 
+    animation(playerWalk, 500, 200)
+
     drawSprites();
 
     drawDynamicBackground();
 
     removeBorders();
+
+
 }
 
 function scrollRight() {
