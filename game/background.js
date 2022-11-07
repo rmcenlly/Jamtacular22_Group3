@@ -1,15 +1,16 @@
 let groundPosition = 0;
+let groundHeight = H * (7/12)
 function drawStaticBackground() {
     background("#C68836");
     noStroke();
 
-    for (let i = H/2; i < H; i += road.width) {
+    for (let i = groundHeight; i < H; i += road.width) {
         for (let j = groundPosition; j < groundPosition + W; j+= road.width) {
             image(road, j, i);        
         }
     }
-    fill("rgba(0, 0, 0, 0.7)");
-    rect(groundPosition, H/2, W, H/2);
+    fill("rgba(0, 0, 0, 0.5)");
+    rect(groundPosition, groundHeight, W, groundHeight);
 }
 
 function drawDynamicBackground() {
