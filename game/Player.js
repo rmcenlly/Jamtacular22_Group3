@@ -44,7 +44,7 @@ class Player{
     }
     makePaddle(x,y,w,h){
         let tempPaddle=createSprite(x,y,w,h);
-        tempPaddle.shapeColor="red";
+        tempPaddle.addImage(playerIdle)
         tempPaddle.mass=100
         tempPaddle.friction=0.3
         return tempPaddle;

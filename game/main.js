@@ -10,7 +10,7 @@ let playerPosition = 0;
 
 let road, cloud1, cloud2, cloud3, cloud4;
 
-let playerSpeed = 10;
+let playerSpeed = 3;
 
 function preload() {
     road = loadImage('../assets/img/stone_walk.png');
@@ -22,10 +22,10 @@ function preload() {
 
 
     playerWalk = loadAnimation(
+    '../assets/img/PlayerSprites/Walk/walk0.png',
     '../assets/img/PlayerSprites/Walk/walk1.png',
     '../assets/img/PlayerSprites/Walk/walk2.png',
     '../assets/img/PlayerSprites/Walk/walk3.png',
-    '../assets/img/PlayerSprites/Walk/walk4.png',
     '../assets/img/PlayerSprites/Walk/walk5.png',
     '../assets/img/PlayerSprites/Walk/walk6.png')
 
