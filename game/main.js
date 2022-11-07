@@ -2,6 +2,8 @@ let width, height;
 
 let player = new Player();
 
+let zombie = new Zombie();
+
 let playerWalk;
 let playerIdle;
 
@@ -10,7 +12,7 @@ let playerPosition = 0;
 
 let road, cloud1, cloud2, cloud3, cloud4;
 
-let playerSpeed = 3;
+let playerSpeed = 2;
 
 function scrollRight() {
     if (keyIsDown(KEYS.D) && groundPosition < 900) {
@@ -54,6 +56,10 @@ function setup() {
     width = W;
     height = H;
     player.setup();
+    zombie.setup();
+
+    // zombie = createSprite(700, 3 * H/4);
+    // zombie.addAnimation("Walking Zombie", zombieWalk)
 }
 
 function draw() {
@@ -65,9 +71,9 @@ function draw() {
 
     player.draw();
 
-    animation(playerWalk, 500, 200);
+    zombie.draw();
 
-    animation(zombieWalk, 1200, 3 * H/4);
+    animation(playerWalk, 500, 200);
 
     drawSprites();
 

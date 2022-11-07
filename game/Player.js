@@ -10,11 +10,13 @@ class Player{
     }
     controls(){
         if(keyIsDown(KEYS.A)){
-            this.goLeft()
+            this.goLeft();
+            this.sprite.mirrorX(-1);
             playerPosition--;
         }
         if(keyIsDown(KEYS.D)){
-            this.goRight()
+            this.goRight();
+            this.sprite.mirrorX(1);
             playerPosition++;
         }
         if (keyIsDown(KEYS.UP)) {
