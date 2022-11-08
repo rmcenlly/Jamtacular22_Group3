@@ -42,7 +42,11 @@ class Player{
         this.sprite=this.makePaddle(this.start.x,this.start.y,this.w, this.h)
     }
     draw(){
-        this.controls()
+        this.sprite.collide(leftBorder, scrollLeft);
+        this.sprite.collide(rightBorder, scrollRight);
+        this.sprite.collide(topBorder);
+        this.sprite.collide(bottomBorder);
+        this.controls();
     }
     makePaddle(x,y,w,h){
         let tempPaddle=createSprite(x,y,w,h);

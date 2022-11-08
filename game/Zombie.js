@@ -11,7 +11,8 @@ class Zombie{
         this.h=190;
     }
     setup(){
-        this.sprite=this.makePaddle(this.start.x,this.start.y,this.w, this.h)
+        this.sprite=this.makePaddle(this.start.x,this.start.y,this.w, this.h);
+        enemiesOnScreen++;
     }
     draw() {
         this.sprite.attractionPoint(0.2, player.sprite.position.x, player.sprite.position.y);
@@ -24,6 +25,7 @@ class Zombie{
         else {
             this.sprite.mirrorX(1);
         }
+
     }
     makePaddle(x,y,w,h){
         let tempPaddle=createSprite(x,y,w,h);

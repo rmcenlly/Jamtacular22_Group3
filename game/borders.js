@@ -18,12 +18,6 @@ function drawBorders() {
     bottomBorder = createSprite(groundPosition + W/2, 720, W, 0);
     bottomBorder.immovable = true;
     borders.add(bottomBorder);
-
-
-    player.sprite.collide(leftBorder, scrollLeft);
-    player.sprite.collide(rightBorder, scrollRight);
-    player.sprite.collide(topBorder);
-    player.sprite.collide(bottomBorder);
 }
 
 function removeBorders() {
