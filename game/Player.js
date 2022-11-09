@@ -53,6 +53,7 @@ class Player{
         tempPaddle.addImage(playerIdle)
         tempPaddle.mass=100
         tempPaddle.friction=0.3
+        tempPaddle.setCollider("rectangle", 0, 0, 40, h * 1.5)
         return tempPaddle;
     }
 }

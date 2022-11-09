@@ -11,7 +11,7 @@ function drawBorders() {
     rightBorder.immovable = true;
     borders.add(rightBorder);
     
-    topBorder = createSprite(groundPosition + W/2, 400, W, 0);
+    topBorder = createSprite(groundPosition + W/2, H/2 - player.sprite.height/2, W, 0);
     topBorder.immovable = true;
     borders.add(topBorder);
     
