@@ -9,6 +9,8 @@ let enemiesOnScreen = 0;
 let playerWalk;
 let playerIdle;
 
+let zombieWalk, zombieAttack;
+
 
 let playerPosition = 0;
 
@@ -17,14 +19,14 @@ let road, cloud1, cloud2, cloud3, cloud4;
 let playerSpeed = 5;
 
 function scrollRight() {
-    if (keyIsDown(KEYS.D) && groundPosition < 900) {
+    if (keyIsDown(KEYS.D) && groundPosition < 900 && enemiesOnScreen == 0) {
         camera.position.x += playerSpeed;
         groundPosition += playerSpeed;
     }
 }
 
 function scrollLeft() {
-    if (keyIsDown(KEYS.A) && groundPosition > 0) {
+    if (keyIsDown(KEYS.A) && groundPosition > 0 && enemiesOnScreen == 0) {
         camera.position.x -= playerSpeed;
         groundPosition -= playerSpeed;
     }
@@ -40,6 +42,10 @@ function preload() {
     zombieWalk = loadAnimation(
     '../assets/img/Zombie/walk/jared0133.png',
     '../assets/img/Zombie/walk/jared0173.png'
+    )
+    zombieAttack = loadAnimation(
+    '../assets/img/Zombie/Attack/jared0174.png',
+    '../assets/img/Zombie/Attack/jared0198.png'
     )
 
     playerWalk = loadAnimation(
@@ -59,6 +65,8 @@ function setup() {
     height = H;
     player.setup();
     zombie.setup();
+
+    playerIdle.resize(66, 190)
 }
 
 function draw() {
@@ -79,4 +87,7 @@ function draw() {
     drawDynamicBackground();
 
     removeBorders();
+
+    player.sprite.debug = true
+    zombie.sprite.debug = true
 }
