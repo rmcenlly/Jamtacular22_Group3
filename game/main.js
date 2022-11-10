@@ -195,7 +195,7 @@ function draw() {
 
     zombie.draw();
 
-    animation(playerWalk, 500, 200);
+    // animation(playerWalk, 500, 200);
 
     drawSprites();
 
@@ -203,6 +203,6 @@ function draw() {
 
     removeBorders();
 
-    player.sprite.debug = true
-    zombie.sprite.debug = true
+    // player.sprite.debug = true
+    // zombie.sprite.debug = true
 }
