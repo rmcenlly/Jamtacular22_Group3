@@ -15,6 +15,7 @@ class Zombie{
     setup(){
         this.sprite=this.makePaddle(this.start.x,this.start.y,this.w, this.h);
         enemiesOnScreen++;
+        this.sprite.immovable = true;
     }
     draw() {
         this.sprite.attractionPoint(0.2, player.sprite.position.x, player.sprite.position.y);
