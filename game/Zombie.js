@@ -22,10 +22,6 @@ class Zombie{
 
         this.sprite.collide(player.sprite, this.attackPlayer);
 
-        if (mouseIsPressed) {
-            this.sprite.changeAnimation("Walking Zombie")
-        }
-
         let currentAttackingFrame = this.sprite.animations["Attacking Zombie"].getFrame();
 
         // If zombie is attacking, zombie won't move
