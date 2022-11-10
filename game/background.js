@@ -5,7 +5,7 @@ function drawStaticBackground() {
     noStroke();
 
     for (let i = groundHeight; i < H; i += road.width) {
-        for (let j = groundPosition; j < groundPosition + W; j+= road.width) {
+        for (let j = 0; j < groundPosition + W; j+= road.width) {
             image(road, j, i);        
         }
     }

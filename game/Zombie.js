@@ -22,16 +22,13 @@ class Zombie{
 
         this.sprite.collide(player.sprite, this.attackPlayer);
 
-        if (zombieState == 1) {
-            // this.sprite.changeAnimation("Walking Zombie")
-        }
-
         if (mouseIsPressed) {
             this.sprite.changeAnimation("Walking Zombie")
         }
 
         let currentAttackingFrame = this.sprite.animations["Attacking Zombie"].getFrame();
 
+        // If zombie is attacking, zombie won't move
         if (zombieState != 0) {
             this.sprite.attractionPoint(-0.2, player.sprite.position.x, player.sprite.position.y);
         }
@@ -42,12 +39,6 @@ class Zombie{
             zombieState = 0;
         }
 
-        // TODO: If zombie attacking, doesn't move
-
-
-        // zombieWalk.onComplete(console.log("yo"))
-
-        // console.log(this.sprite.collide(player.sprite))
 
         if (this.sprite.position.x < player.sprite.position.x) {
             this.sprite.mirrorX(-1);
