@@ -6,8 +6,36 @@ let zombie = new Zombie();
 
 let enemiesOnScreen = 0;
 
+//player sprite variables
+
+//player movement
 let playerWalk;
 let playerIdle;
+let playerCrouch;
+let playerJump;
+let playerStand;
+
+//player combat
+let playerGuard;
+let playerGuardCrouch;
+let playerGuardJump;
+let playerJab;
+let playerJabCrouch;
+let playerJabJump;
+let playerHrzStrike;
+let playerHrzStrikeCrouch;
+let playerHrzStrikeJump;
+let playerVertStrike;
+let playerVertStrikeCrouch;
+let playerVertStrikeJump;
+
+
+//player damage
+let playerDmgAir;
+let playerDmgCrouch;
+let playerDmgHi;
+let playerDmgLo;
+let playerKO;
 
 let zombieWalk, zombieAttack;
 
@@ -47,16 +75,103 @@ function preload() {
     '../assets/img/Zombie/Attack/jared0174.png',
     '../assets/img/Zombie/Attack/jared0198.png'
     )
+    
+    //Player Images
 
+    //Movement:
+    //walk
     playerWalk = loadAnimation(
     '../assets/img/PlayerSprites/Walk/walk0.png',
     '../assets/img/PlayerSprites/Walk/walk1.png',
     '../assets/img/PlayerSprites/Walk/walk2.png',
     '../assets/img/PlayerSprites/Walk/walk3.png',
-    '../assets/img/PlayerSprites/Walk/walk5.png',
-    '../assets/img/PlayerSprites/Walk/walk6.png')
-
+    '../assets/img/PlayerSprites/Walk/walk4.png',
+    '../assets/img/PlayerSprites/Walk/walk5.png')
+    
+    //Idle
     playerIdle = loadImage('../assets/img/PlayerSprites/Idle/idle.png');
+
+    //Crouch
+    playerCrouch = loadAnimation(
+        '../assets/img/PlayerSprites/Crouch/crouch0.png',
+        '../assets/img/PlayerSprites/Crouch/crouch1.png',
+        '../assets/img/PlayerSprites/Crouch/crouch2.png'
+    )
+    //Jump
+    playerJump = loadAnimation(
+        '../assets/img/PlayerSprites/jump/jump0.png',
+        '../assets/img/PlayerSprites/jump/jump1.png',
+        '../assets/img/PlayerSprites/jump/jump2.png'
+    )
+
+    //Stand
+    playerStand = loadImage('../assets/img/PlayerSprites/stand/stand.png');
+
+    //Combat:
+    //Guard
+    playerGuard = loadImage('../assets/img/PlayerSprites/guard/guard.png');
+    playerGuardCrouch = loadImage('../assets/img/PlayerSprites/guard/guardCrouch.png');
+    playerGuardJump = loadImage('../assets/img/PlayerSprites/guard/guardJump.png');
+
+    //Jab
+    playerJab = loadAnimation(
+        '../assets/img/PlayerSprites/jab/jab0.png',
+        '../assets/img/PlayerSprites/jab/jab1.png'
+    )
+    playerJabCrouch = loadAnimation(
+        '../assets/img/PlayerSprites/jab/jabCrouch0.png',
+        '../assets/img/PlayerSprites/jab/jabCrouch1.png',
+    )
+    playerJabJump = loadAnimation(
+        '../assets/img/PlayerSprites/jab/jabJump0.png',
+        '../assets/img/PlayerSprites/jab/jabJump1.png'
+    )
+
+    //Horizontal Strike 
+    playerHrzStrike = loadAnimation(
+        '../assets/img/PlayerSprites/hrzStrike/hrzStrike0.png',
+        '../assets/img/PlayerSprites/hrzStrike/hrzStrike1.png',
+        '../assets/img/PlayerSprites/hrzStrike/hrzStrike2.png'
+    )
+    playerHrzStrikeCrouch = loadAnimation(
+        '../assets/img/PlayerSprites/hrzStrike/hrzStrikeCrouch0.png',
+        '../assets/img/PlayerSprites/hrzStrike/hrzStrikeCrouch1.png',
+        '../assets/img/PlayerSprites/hrzStrike/hrzStrikeCrouch2.png',
+    )
+
+    playerHrzStrikeJump = loadAnimation(
+        '../assets/img/PlayerSprites/hrzStrike/hrzStrikeJump0.png',
+        '../assets/img/PlayerSprites/hrzStrike/hrzStrikeJump1.png',
+        '../assets/img/PlayerSprites/hrzStrike/hrzStrikeJump2.png',
+    )
+
+    //Vertical Strike
+    playerVertStrike = loadAnimation(
+        '../assets/img/PlayerSprites/vertStrike/vertStrike0.png',
+        '../assets/img/PlayerSprites/vertStrike/vertStrike1.png',
+        '../assets/img/PlayerSprites/vertStrike/vertStrike2.png',
+    )
+
+    playerVertStrikeCrouch = loadAnimation(
+        '../assets/img/PlayerSprites/vertStrike/vertStrikeCrouch0.png',
+        '../assets/img/PlayerSprites/vertStrike/vertStrikeCrouch1.png',
+        '../assets/img/PlayerSprites/vertStrike/vertStrikeCrouch2.png',
+    )
+
+    playerVertStrikeJump = loadAnimation(
+        '../assets/img/PlayerSprites/vertStrike/vertStrikeJump0.png',
+        '../assets/img/PlayerSprites/vertStrike/vertStrikeJump1.png',
+        '../assets/img/PlayerSprites/vertStrike/vertStrikeJump2.png',
+    )
+
+    //Damage:
+    playerDmgAir = loadAnimation(
+        '../assets/img/PlayerSprites/dmgAir/dmgAir0.png',
+        '../assets/img/PlayerSprites/dmgAir/dmgAir0.png',
+    )
+
+
+
 }
 
 function setup() {
