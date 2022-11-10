@@ -29,6 +29,15 @@ class Zombie{
             this.sprite.changeAnimation("Walking Zombie")
         }
 
+        let currentAttackingFrame = this.sprite.animations["Attacking Zombie"].getFrame();
+
+        console.log(currentAttackingFrame)
+
+        if (currentAttackingFrame == 24) {
+            this.sprite.animations["Attacking Zombie"].changeFrame(0);
+            this.sprite.changeAnimation("Walking Zombie");
+        }
+
         // zombieWalk.onComplete(console.log("yo"))
 
         // console.log(this.sprite.collide(player.sprite))
