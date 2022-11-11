@@ -2,7 +2,9 @@ let width, height;
 
 let player = new Player();
 
-let zombie = new Zombie();
+let zombie0 = new Zombie(ZOMBIES[0].xPos, ZOMBIES[0].yPos);
+
+let zombie1 = new Zombie(ZOMBIES[1].xPos, ZOMBIES[1].yPos);
 
 let enemiesOnScreen = 0;
 
@@ -179,12 +181,18 @@ function setup() {
     width = W;
     height = H;
     player.setup();
-    zombie.setup();
 
     playerIdle.resize(66, 190)
 }
 
 function draw() {
+    // Dynamically setup zombies
+    for (let i = 0; i < ZOMBIES.length; i++) {
+        if (frameCount == ZOMBIES[i].time) {
+            eval('zombie' + i + '.setup();');
+        }
+    }
+
     clear();
 
     drawStaticBackground();
@@ -193,7 +201,12 @@ function draw() {
 
     player.draw();
 
-    zombie.draw();
+    // Dynamically draw zombies
+    for (let i = 0; i < ZOMBIES.length; i++) {
+        if (frameCount >= ZOMBIES[i].time) {
+            eval('zombie' + i + '.draw();');
+        }
+    }
 
     // animation(playerWalk, 500, 200);
 

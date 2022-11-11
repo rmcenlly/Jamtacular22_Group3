@@ -1,19 +1,18 @@
-// zombie = createSprite(500, 3 * H/4, 50, 50);
-
 let zombieState = 0;
 
 class Zombie{
-    constructor(){
+    constructor(x, y){
         this.sprite
         this.start={
-            x:700,
-            y:3 * H/4
+            x: x,
+            y: y
         }
         this.w=112;
         this.h=190;
+        // this.state = 0;
     }
     setup(){
-        this.sprite=this.makePaddle(this.start.x,this.start.y,this.w, this.h);
+        this.sprite=this.makeZombie(this.start.x, this.start.y, this.w, this.h);
         enemiesOnScreen++;
         this.sprite.immovable = true;
     }
@@ -35,7 +34,6 @@ class Zombie{
             zombieState = 0;
         }
 
-
         if (this.sprite.position.x < player.sprite.position.x) {
             this.sprite.mirrorX(-1);
         }
@@ -43,17 +41,34 @@ class Zombie{
             this.sprite.mirrorX(1);
         }
     }
-    makePaddle(x,y,w,h){
-        let tempPaddle=createSprite(x,y,w,h);
-        tempPaddle.addAnimation("Walking Zombie", zombieWalk)
-        tempPaddle.addAnimation("Attacking Zombie", zombieAttack)
-        tempPaddle.mass=100
-        tempPaddle.friction=0.3
-        tempPaddle.setCollider("rectangle", 0, -50, w - 50, 25)
-        return tempPaddle;
+    makeZombie(x,y,w,h){
+        let tempZombie=createSprite(x,y,w,h);
+        tempZombie.addAnimation("Walking Zombie", zombieWalk)
+        tempZombie.addAnimation("Attacking Zombie", zombieAttack)
+        tempZombie.mass=100
+        tempZombie.friction=0.3
+        tempZombie.setCollider("rectangle", 0, -50, w - 50, 25)
+        return tempZombie;
     }
     attackPlayer() {
-        this.changeAnimation("Attacking Zombie");
         zombieState = 1;
+        this.changeAnimation("Attacking Zombie");
     }
+}
+
+const ZOMBIES = [
+    {
+        xPos: 700,
+        yPos: 3 * H/4,
+        time: 1
+    },
+    {
+        xPos: 1000,
+        yPos: 3 * H/4,
+        time: 300
+    }
+];
+
+for (let i = 0; i < ZOMBIES.length; i++) {
+    eval('let zombie' + i + ' = new Zombie(ZOMBIES[' + i + '].xPos, ZOMBIES[' + i + '].yPos)')
 }
