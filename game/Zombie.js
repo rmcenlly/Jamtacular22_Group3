@@ -9,7 +9,8 @@ class Zombie{
         }
         this.w=112;
         this.h=190;
-        // this.state = 0;
+        this.state = 0;
+        this.moving = true;
     }
     setup(){
         this.sprite=this.makeZombie(this.start.x, this.start.y, this.w, this.h);
@@ -17,21 +18,31 @@ class Zombie{
         this.sprite.immovable = true;
     }
     draw() {
-        this.sprite.attractionPoint(0.2, player.sprite.position.x, player.sprite.position.y);
+
+        // if (this.moving) {
+            // this.sprite.attractionPoint(0.2, player.sprite.position.x, player.sprite.position.y);
+        // }
+
+        if (this.state == 0) {
+            this.sprite.attractionPoint(0.2, player.sprite.position.x, player.sprite.position.y)
+        }
+        else {
+            this.sprite.attractionPoint(-0.2, player.sprite.position.x, player.sprite.position.y)
+        }
 
         this.sprite.collide(player.sprite, this.attackPlayer);
 
         let currentAttackingFrame = this.sprite.animations["Attacking Zombie"].getFrame();
 
         // If zombie is attacking, zombie won't move
-        if (zombieState != 0) {
-            this.sprite.attractionPoint(-0.2, player.sprite.position.x, player.sprite.position.y);
+        if (this.state == 1) {
+            this.attractionPoint(-0.2, player.sprite.position.x, player.sprite.position.y)
         }
 
         if (currentAttackingFrame == 24) {
             this.sprite.animations["Attacking Zombie"].changeFrame(0);
             this.sprite.changeAnimation("Walking Zombie");
-            zombieState = 0;
+            this.state = 0;
         }
 
         if (this.sprite.position.x < player.sprite.position.x) {
@@ -51,8 +62,10 @@ class Zombie{
         return tempZombie;
     }
     attackPlayer() {
-        zombieState = 1;
+        this.state = 1;
         this.changeAnimation("Attacking Zombie");
+        this.attractionPoint(-0.2, player.sprite.position.x, player.sprite.position.y);
+        this.moving = false;
     }
 }
 
