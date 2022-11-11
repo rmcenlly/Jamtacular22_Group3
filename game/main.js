@@ -205,6 +205,7 @@ function draw() {
     for (let i = 0; i < ZOMBIES.length; i++) {
         if (frameCount >= ZOMBIES[i].time) {
             eval('zombie' + i + '.draw();');
+            eval('zombie' + i + '.sprite.debug = true;');
         }
     }
 
@@ -216,6 +217,5 @@ function draw() {
 
     removeBorders();
 
-    // player.sprite.debug = true
-    // zombie.sprite.debug = true
+    player.sprite.debug = true
 }
