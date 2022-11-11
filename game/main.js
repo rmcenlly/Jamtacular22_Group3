@@ -169,8 +169,30 @@ function preload() {
     //Damage:
     playerDmgAir = loadAnimation(
         '../assets/img/PlayerSprites/dmgAir/dmgAir0.png',
-        '../assets/img/PlayerSprites/dmgAir/dmgAir0.png',
+        '../assets/img/PlayerSprites/dmgAir/dmgAir1-0.png',
+        '../assets/img/PlayerSprites/dmgAir/dmgAir1-1.png'
     )
+    
+    playerDmgCrouch = loadAnimation(
+        '../assets/img/PlayerSprites/dmgCrouch/DmgCrouch0.png',
+        '../assets/img/PlayerSprites/dmgCrouch/DmgCrouch1.png'
+    )
+
+    playerDmgHi = loadAnimation(
+        '../assets/img/PlayerSprites/dmgHi/dmgHi0.png',
+        '../assets/img/PlayerSprites/dmgHi/dmgHi1.png'
+    )
+
+    playerDmgLo = loadAnimation(
+        '../assets/img/PlayerSprites/dmgLo/DmgLo0.png',
+        '../assets/img/PlayerSprites/dmgLo/DmgLo1.png'
+    )
+
+    playerKO = loadAnimation(
+        '../assets/img/PlayerSprites/KO/ko0.png',
+        '../assets/img/PlayerSprites/KO/ko1.png'
+    )
+
 
 
 

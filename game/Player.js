@@ -1,3 +1,6 @@
+let playerState = 0;
+
+
 class Player{
     constructor(){
         this.sprite
