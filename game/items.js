@@ -30,13 +30,12 @@ class item{
         this.itemSprite.collide(Player, itemRemove)
     }
     itemRemove(){
-        this.itemSound;
+        this.itemSound.play;
         this.itemSprite.remove();
     }
 }
 
-
-
+//when character collides with item, item disappear and sound play
 
 class beer extends item{
     constructor(){
@@ -48,20 +47,4 @@ class beer extends item{
       this.itemSprite.addImage(beerImg);
     }
   }
-
-//dog.collide(grass2Group, gameOver);
-// cat.bounce(grass2Group, gameOver);
-// }
-
-// function dogDie(nutGroup, dog) {
-// dogHit.play();
-// dog.changeAnimation('die');
-// dog.life = 30;
-// nutGroup.remove();
-// }
-
-
-//   attachSounds(sound1, sound2);{
-//     this.sound1=sound1
-//   }
  
