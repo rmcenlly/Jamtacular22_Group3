@@ -10,6 +10,8 @@ class Player{
         }
         this.w=25;
         this.h=75;
+        this.colliderWidth;
+        this.colliderHeight;
         this.scale = 4;
         this.state = 0;
         this.crouching = false;
@@ -57,14 +59,15 @@ class Player{
 
     crouch(){
         this.sprite.changeAnimation("Player Crouch");
-        //this.sprite.setCollider("rectangle", 0, 8, 15, 25)
+        this.sprite.setCollider("rectangle", 0, 30, this.colliderWidth * this.scale, (this.colliderHeight * this.scale) * 0.8)
         
         
     }
 
     stand() {
         this.sprite.changeAnimation("Player Stand");
-        //this.sprite.setCollider("rectangle", 0, 8, 15, 45)
+        this.sprite.setCollider("rectangle", 0, 0, this.colliderWidth *this.scale, this.colliderHeight * this.scale)
+        
     }
 
     getScaledHeight(){
@@ -104,11 +107,12 @@ class Player{
         this.sprite.addAnimation("Player DmgLo", playerDmgLo)
         this.sprite.addAnimation("Player KO", playerKO)
         
-        this.sprite.scale= this.scale
-        let colliderWidth = this.sprite.width * 0.5
-        let colliderHeight = this.sprite.height * 0.9
-        console.log(colliderWidth, colliderHeight)
-        this.sprite.setCollider("rectangle", 0, 5, colliderWidth, colliderHeight)
+        this.sprite.scale = this.scale
+        console.log(this.sprite.width, this.sprite.height)
+        this.colliderWidth = this.sprite.width * 0.5
+        this.colliderHeight = this.sprite.height * 0.8
+        console.log(this.colliderWidth, this.colliderHeight)
+        this.sprite.setCollider("rectangle", 0, 5, this.colliderWidth, this.colliderHeight)
         
 
         
