@@ -64,21 +64,21 @@ class Player{
 
     crouch(){
         this.sprite.changeAnimation("Player Crouch");
-        this.sprite.setCollider("rectangle", 0, 30, this.colliderWidth * this.scale, (this.colliderHeight * this.scale) * 0.8)
+        // this.sprite.setCollider("rectangle", 0, 30, this.colliderWidth, (this.colliderHeight) * 0.8)
         
         
     }
 
     stand() {
         this.sprite.changeAnimation("Player Stand");
-        this.sprite.setCollider("rectangle", 0, 0, this.colliderWidth *this.scale, this.colliderHeight * this.scale)
+        // this.sprite.setCollider("rectangle", 0, 0, this.colliderWidth, this.colliderHeight)
         
     }
 
 
     guard() {
         this.sprite.changeImage("Player Guard");
-        this.sprite.setCollider("rectangle", -5, 0, this.colliderWidth*this.scale, this.colliderHeight*this.scale)
+        // this.sprite.setCollider("rectangle", -5, 0, this.colliderWidth, this.colliderHeight)
     }
    
     setup(){
@@ -113,8 +113,8 @@ class Player{
         
         this.sprite.scale = this.scale
         console.log(this.sprite.width, this.sprite.height)
-        this.colliderWidth = this.sprite.width * 0.5
-        this.colliderHeight = this.sprite.height * 0.9
+        this.colliderWidth = (this.sprite.width * 0.5)
+        this.colliderHeight = this.sprite.height * 0.9 
         console.log(this.colliderWidth, this.colliderHeight)
         this.sprite.setCollider("rectangle", 0, 5, this.colliderWidth, this.colliderHeight)
         
