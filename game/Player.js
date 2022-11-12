@@ -33,6 +33,8 @@ class Player{
 
         if (keyIsDown(17)) {
             this.crouch()
+        } else {
+            this.stand()
         }
     }
     goLeft(){
@@ -51,6 +53,11 @@ class Player{
     crouch(){
         this.sprite.changeAnimation("Player Crouch");
         
+        
+    }
+
+    stand() {
+        this.sprite.changeAnimation("Player Stand");
     }
     setup(){
         this.sprite=this.makePaddle(this.start.x,this.start.y,this.w, this.h)
@@ -59,7 +66,7 @@ class Player{
         this.sprite.addImage("Player Idle", playerIdle)
         this.sprite.addAnimation("Player Crouch", playerCrouch)
         this.sprite.addAnimation("Player Jump", playerJump)
-        this.sprite.addImage("Player Stand", playerStand)
+        this.sprite.addAnimation("Player Stand", playerStand)
 
         //Combat
         this.sprite.addImage("Player Guard", playerGuard)

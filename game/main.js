@@ -1,5 +1,8 @@
 let width, height;
-
+let playerSize = {
+    x: 66,
+    y: 190
+}
 let player = new Player();
 
 let zombie0 = new Zombie(ZOMBIES[0].xPos, ZOMBIES[0].yPos);
@@ -9,6 +12,7 @@ let zombie1 = new Zombie(ZOMBIES[1].xPos, ZOMBIES[1].yPos);
 let enemiesOnScreen = 0;
 
 //player sprite variables
+
 
 //player movement
 let playerWalk;
@@ -99,6 +103,20 @@ function preload() {
         '../assets/img/PlayerSprites/Crouch/crouch1.png',
         '../assets/img/PlayerSprites/Crouch/crouch2.png'
     )
+
+    playerCrouch.looping = false;
+
+
+
+     //Stand
+     playerStand = loadAnimation(
+        '../assets/img/PlayerSprites/crouch/crouch2.png',
+        '../assets/img/PlayerSprites/crouch/crouch1.png',
+        '../assets/img/PlayerSprites/crouch/crouch0.png',
+        '../assets/img/PlayerSprites/stand/stand.png'
+        );
+
+     playerStand.looping = false;   
     //Jump
     playerJump = loadAnimation(
         '../assets/img/PlayerSprites/jump/jump0.png',
@@ -106,8 +124,7 @@ function preload() {
         '../assets/img/PlayerSprites/jump/jump2.png'
     )
 
-    //Stand
-    playerStand = loadImage('../assets/img/PlayerSprites/stand/stand.png');
+   
 
     //Combat:
     //Guard
@@ -203,8 +220,13 @@ function setup() {
     width = W;
     height = H;
     player.setup();
-
-    playerIdle.resize(66, 190)
+    player.sprite.scale=2.0
+    
+    
+    //Animation Properties 
+    //playerIdle.resize(playerSize.x, playerSize.y)
+    //playerCrouch.resize(playerSize.x, playerSize.y)
+    //playerCrouch.looping(false);
 }
 
 function draw() {
