@@ -11,7 +11,12 @@ class Player{
         this.w=30;
         this.h=100;
 
-        this.state = 0
+        this.state = 0;
+        this.crouching = false;
+        this.idle = true;
+        this.hp = 100;
+        this.jabDamage = 2;
+        this.strikeDamage = 5;
     }
     controls(){
         if(keyIsDown(KEYS.A)){
@@ -102,7 +107,7 @@ class Player{
         tempPaddle.addImage(playerIdle)
         tempPaddle.mass=100
         tempPaddle.friction=0.3
-        tempPaddle.setCollider("rectangle", 0, 0, 40, h * 1.5)
+        //tempPaddle.setCollider("rectangle", 0, 0, 40, h * 1.5)
         return tempPaddle;
     }
 }

@@ -220,7 +220,8 @@ function setup() {
     width = W;
     height = H;
     player.setup();
-    player.sprite.scale=2.0
+    player.sprite.scale=4.0
+    player.sprite.setCollider("rectangle", 0, 8, 15, 45)
     
     
     //Animation Properties 
