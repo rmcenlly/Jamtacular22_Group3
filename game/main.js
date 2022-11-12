@@ -111,9 +111,9 @@ function preload() {
 
      //Stand
      playerStand = loadAnimation(
-        '../Jamtacular22_Group3/assets/img/PlayerSprites/crouch/crouch2.png',
-        '../Jamtacular22_Group3/assets/img/PlayerSprites/crouch/crouch1.png',
-        '../Jamtacular22_Group3/assets/img/PlayerSprites/crouch/crouch0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch2.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch0.png',
         '../Jamtacular22_Group3/assets/img/PlayerSprites/stand/stand.png'
         );
 
