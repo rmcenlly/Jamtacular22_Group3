@@ -197,8 +197,8 @@ function preload() {
     )
 
     playerDmgHi = loadAnimation(
-        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgHi/dmgHi0.png',
-        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgHi/dmgHi1.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgHi/DmgHi0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgHi/DmgHi1.png'
     )
 
     playerDmgLo = loadAnimation(
