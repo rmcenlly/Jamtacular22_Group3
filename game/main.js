@@ -67,7 +67,8 @@ function scrollLeft() {
 }
 
 function preload() {
-    road = loadImage('../Jamtacular22_Group3/assets/img/stone_walk.png');
+    // road = loadImage('../Jamtacular22_Group3/assets/img/stone_walk.png');
+    road = loadImage('https://rmcenlly.github.io/Jamtacular22_Group3/assets/img/stone_walk.png')
     cloud1 = loadImage('../Jamtacular22_Group3/assets/img/Clouds/cloud1.png');
     cloud2 = loadImage('../Jamtacular22_Group3/assets/img/Clouds/cloud2.png');
     cloud3 = loadImage('../Jamtacular22_Group3/assets/img/Clouds/cloud3.png');
