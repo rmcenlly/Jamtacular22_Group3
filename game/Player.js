@@ -13,7 +13,7 @@ class Player{
 
         this.state = 0;
         this.crouching = false;
-        this.idle = true;
+        this.idle = 0;
         this.hp = 100;
         this.jabDamage = 2;
         this.strikeDamage = 5;
@@ -57,12 +57,14 @@ class Player{
 
     crouch(){
         this.sprite.changeAnimation("Player Crouch");
+        this.sprite.setCollider("rectangle", 0, 8, 15, 25)
         
         
     }
 
     stand() {
         this.sprite.changeAnimation("Player Stand");
+        this.sprite.setCollider("rectangle", 0, 8, 15, 45)
     }
     setup(){
         this.sprite=this.makePaddle(this.start.x,this.start.y,this.w, this.h)
@@ -93,6 +95,13 @@ class Player{
         this.sprite.addAnimation("Player DmgHi", playerDmgHi)
         this.sprite.addAnimation("Player DmgLo", playerDmgLo)
         this.sprite.addAnimation("Player KO", playerKO)
+        
+        this.sprite.scale=4.0
+        
+        
+
+        
+        
 
     }
     draw(){
@@ -107,7 +116,7 @@ class Player{
         tempPaddle.addImage(playerIdle)
         tempPaddle.mass=100
         tempPaddle.friction=0.3
-        //tempPaddle.setCollider("rectangle", 0, 0, 40, h * 1.5)
+        
         return tempPaddle;
     }
 }
