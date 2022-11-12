@@ -4,8 +4,8 @@ let beerImg;
 let beerSound;
 
 function preload () {
-beerImg = loadImage('images/beer_bottle.png');
-
+beerImg = loadImage('assets/img/items/beer_bottle.png');
+beerSound = loadSound('')
 }
 
 class item{
@@ -27,13 +27,14 @@ class item{
     } 
 
     addCollision(){
-        this.itemSprite.collide()
+        this.itemSprite.collide(Player, itemRemove)
     }
     itemRemove(){
-        
+        this.itemSound;
         this.itemSprite.remove();
     }
 }
+
 
 
 
