@@ -105,10 +105,10 @@ class Player{
         this.sprite.addAnimation("Player KO", playerKO)
         
         this.sprite.scale= this.scale
-        let colliderWidth = this.sprite.width;
-        let colliderHeight = this.sprite.height
+        let colliderWidth = this.sprite.width * 0.5
+        let colliderHeight = this.sprite.height * 0.9
         console.log(colliderWidth, colliderHeight)
-        this.sprite.setCollider("rectangle", 0, 5, colliderWidth-15, colliderHeight-5)
+        this.sprite.setCollider("rectangle", 0, 5, colliderWidth, colliderHeight)
         
 
         
