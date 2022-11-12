@@ -5,7 +5,7 @@ let beerSound;
 
 function preload () {
 beerImg = loadImage('assets/img/items/beer_bottle.png');
-beerSound = loadSound('')
+beerSound = loadSound('assets/sound/beer.mp3');
 }
 
 class item{
