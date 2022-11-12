@@ -12,7 +12,7 @@ class Player{
         this.h=75;
         this.colliderWidth;
         this.colliderHeight;
-        this.scale = 4;
+        this.scale = 3.5;
         this.state = 0;
         this.crouching = false;
         this.idle = 0;
@@ -43,6 +43,11 @@ class Player{
         } else {
             this.stand()
         }
+
+        if (keyIsDown(16)) {
+            this.guard()
+            
+        }
     }
     goLeft(){
         this.sprite.velocity.x -= playerSpeed;
@@ -70,13 +75,12 @@ class Player{
         
     }
 
-    getScaledHeight(){
-        return this.h* this.scale;
-    }
 
-    getScaledWidth(){
-        return this.w * this.scale;
+    guard() {
+        this.sprite.changeImage("Player Guard");
+        this.sprite.setCollider("rectangle", -5, 0, this.colliderWidth*this.scale, this.colliderHeight*this.scale)
     }
+   
     setup(){
         this.sprite=this.makePaddle(this.start.x,this.start.y,this.w, this.h)
         //Movement
@@ -110,7 +114,7 @@ class Player{
         this.sprite.scale = this.scale
         console.log(this.sprite.width, this.sprite.height)
         this.colliderWidth = this.sprite.width * 0.5
-        this.colliderHeight = this.sprite.height * 0.8
+        this.colliderHeight = this.sprite.height * 0.9
         console.log(this.colliderWidth, this.colliderHeight)
         this.sprite.setCollider("rectangle", 0, 5, this.colliderWidth, this.colliderHeight)
         
