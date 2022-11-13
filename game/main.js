@@ -95,12 +95,12 @@ function preload() {
     cloud4 = loadImage('../Jamtacular22_Group3/assets/img/Clouds/cloud4.png');
 
     zombieWalk = loadAnimation(
-    '.../Jamtacular22_Group3/assets/img/Zombie/walk/jared0133.png',
-    '.../Jamtacular22_Group3/assets/img/Zombie/walk/jared0173.png'
+    '../Jamtacular22_Group3/assets/img/Zombie/walk/jared0133.png',
+    '../Jamtacular22_Group3/assets/img/Zombie/walk/jared0173.png'
     )
     zombieAttack = loadAnimation(
-    '.../Jamtacular22_Group3/assets/img/Zombie/Attack/jared0174.png',
-    '.../Jamtacular22_Group3/assets/img/Zombie/Attack/jared0198.png'
+    '../Jamtacular22_Group3/assets/img/Zombie/Attack/jared0174.png',
+    '../Jamtacular22_Group3/assets/img/Zombie/Attack/jared0198.png'
     )
     
     //Player Images
@@ -108,36 +108,36 @@ function preload() {
     //Movement:
     //walk
     playerWalk = loadAnimation(
-    '.../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk0.png',
-    '.../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk1.png',
-    '.../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk2.png',
-    '.../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk3.png',
-    '.../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk4.png',
-    '.../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk5.png')
-    
-    //Idle
-    playerIdle = loadImage('.../Jamtacular22_Group3/assets/img/PlayerSprites/Idle/idle.png');
-
-    //Crouch
-    playerCrouch = loadAnimation(
-    '.../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch0.png',
-    '.../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch1.png',
-    '.../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch2.png',
-    '.../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk0.png',
-    '.../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk1.png',
-    '.../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk2.png',
-    '.../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk3.png',
-    '.../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk4.png',
-    '.../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk5.png')
+    '../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk0.png',
+    '../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk1.png',
+    '../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk2.png',
+    '../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk3.png',
+    '../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk4.png',
+    '../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk5.png')
     
     //Idle
     playerIdle = loadImage('../Jamtacular22_Group3/assets/img/PlayerSprites/Idle/idle.png');
 
     //Crouch
     playerCrouch = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch2.png'
+    '../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch0.png',
+    '../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch1.png',
+    '../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch2.png',
+    '../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk0.png',
+    '../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk1.png',
+    '../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk2.png',
+    '../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk3.png',
+    '../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk4.png',
+    '../Jamtacular22_Group3/assets/img/PlayerSprites/Walk/walk5.png')
+    
+    //Idle
+    playerIdle = loadImage('../Jamtacular22_Group3/assets/img/PlayerSprites/Idle/idle.png');
+
+    //Crouch
+    playerCrouch = loadAnimation(
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch2.png'
     )
 
     playerCrouch.looping = false;
@@ -146,191 +146,191 @@ function preload() {
 
      //Stand
      playerStand = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch2.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/stand/stand.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch2.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/stand/stand.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch2.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/stand/stand.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch2.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/Crouch/crouch0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/stand/stand.png'
         );
 
      playerStand.looping = false;   
     //Jump
     playerJump = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jump/jump0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jump/jump1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jump/jump2.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jump/jump0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jump/jump1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jump/jump2.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jump/jump0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jump/jump1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jump/jump2.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jump/jump0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jump/jump1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jump/jump2.png'
     )
 
    
 
     //Combat:
     //Guard
-    playerGuard = loadImage('.../Jamtacular22_Group3/assets/img/PlayerSprites/guard/guard.png');
-    playerGuardCrouch = loadImage('.../Jamtacular22_Group3/assets/img/PlayerSprites/guard/guardCrouch.png');
-    playerGuardJump = loadImage('.../Jamtacular22_Group3/assets/img/PlayerSprites/guard/guardJump.png');
-
-    //Jab
-    playerJab = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jab0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jab1.png'
-    )
-    playerJabCrouch = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabCrouch0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabCrouch1.png',
-    )
-    playerJabJump = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabJump0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabJump1.png',)
     playerGuard = loadImage('../Jamtacular22_Group3/assets/img/PlayerSprites/guard/guard.png');
-    playerGuardCrouch = loadImage('.../Jamtacular22_Group3/assets/img/PlayerSprites/guard/guardCrouch.png');
-    playerGuardJump = loadImage('.../Jamtacular22_Group3/assets/img/PlayerSprites/guard/guardJump.png');
+    playerGuardCrouch = loadImage('../Jamtacular22_Group3/assets/img/PlayerSprites/guard/guardCrouch.png');
+    playerGuardJump = loadImage('../Jamtacular22_Group3/assets/img/PlayerSprites/guard/guardJump.png');
 
     //Jab
     playerJab = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jab0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jab1.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jab0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jab1.png'
     )
     playerJabCrouch = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabCrouch0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabCrouch1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabCrouch0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabCrouch1.png',
     )
     playerJabJump = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabJump0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabJump1.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabJump0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabJump1.png',)
+    playerGuard = loadImage('../Jamtacular22_Group3/assets/img/PlayerSprites/guard/guard.png');
+    playerGuardCrouch = loadImage('../Jamtacular22_Group3/assets/img/PlayerSprites/guard/guardCrouch.png');
+    playerGuardJump = loadImage('../Jamtacular22_Group3/assets/img/PlayerSprites/guard/guardJump.png');
+
+    //Jab
+    playerJab = loadAnimation(
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jab0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jab1.png'
+    )
+    playerJabCrouch = loadAnimation(
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabCrouch0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabCrouch1.png',
+    )
+    playerJabJump = loadAnimation(
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabJump0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/jab/jabJump1.png'
     )
 
     //Horizontal Strike 
     playerHrzStrike = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrike0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrike1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrike2.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrike0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrike1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrike2.png'
     )
     playerHrzStrikeCrouch = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeCrouch0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeCrouch1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeCrouch2.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeCrouch0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeCrouch1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeCrouch2.png',
     )
 
     playerHrzStrikeJump = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeJump0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeJump1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeJump2.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrike0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrike1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrike2.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeJump0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeJump1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeJump2.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrike0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrike1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrike2.png'
     )
     playerHrzStrikeCrouch = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeCrouch0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeCrouch1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeCrouch2.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeCrouch0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeCrouch1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeCrouch2.png',
     )
 
     playerHrzStrikeJump = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeJump0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeJump1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeJump2.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeJump0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeJump1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/hrzStrike/hrzStrikeJump2.png',
     )
 
     //Vertical Strike
     playerVertStrike = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrike0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrike1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrike2.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrike0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrike1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrike2.png',
     )
 
     playerVertStrikeCrouch = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeCrouch0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeCrouch1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeCrouch2.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeCrouch0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeCrouch1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeCrouch2.png',
     )
 
     playerVertStrikeJump = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeJump0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeJump1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeJump2.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrike0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrike1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrike2.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeJump0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeJump1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeJump2.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrike0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrike1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrike2.png',
     )
 
     playerVertStrikeCrouch = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeCrouch0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeCrouch1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeCrouch2.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeCrouch0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeCrouch1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeCrouch2.png',
     )
 
     playerVertStrikeJump = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeJump0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeJump1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeJump2.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeJump0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeJump1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/vertStrike/vertStrikeJump2.png',
     )
 
     //Damage:
     playerDmgAir = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgAir/dmgAir0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgAir/dmgAir1-0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgAir/dmgAir1-1.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgAir/dmgAir0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgAir/dmgAir1-0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgAir/dmgAir1-1.png'
     )
     
     playerDmgCrouch = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgCrouch/DmgCrouch0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgCrouch/DmgCrouch1.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgCrouch/DmgCrouch0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgCrouch/DmgCrouch1.png'
     )
 
     playerDmgHi = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgHi/DmgHi0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgHi/DmgHi1.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgHi/DmgHi0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgHi/DmgHi1.png'
     )
 
     playerDmgLo = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgLo/DmgLo0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgLo/DmgLo1.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgLo/DmgLo0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgLo/DmgLo1.png'
     )
 
     playerKO = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/KO/ko0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/KO/ko1.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgAir/dmgAir0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgAir/dmgAir1-0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgAir/dmgAir1-1.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/KO/ko0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/KO/ko1.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgAir/dmgAir0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgAir/dmgAir1-0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgAir/dmgAir1-1.png'
     )
     
     playerDmgCrouch = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgCrouch/DmgCrouch0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgCrouch/DmgCrouch1.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgCrouch/DmgCrouch0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgCrouch/DmgCrouch1.png'
     )
 
     playerDmgHi = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgHi/DmgHi0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgHi/DmgHi1.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgHi/DmgHi0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgHi/DmgHi1.png'
     )
 
     playerDmgLo = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgLo/DmgLo0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/dmgLo/DmgLo1.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgLo/DmgLo0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/dmgLo/DmgLo1.png'
     )
 
     playerKO = loadAnimation(
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/KO/ko0.png',
-        '.../Jamtacular22_Group3/assets/img/PlayerSprites/KO/ko1.png'
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/KO/ko0.png',
+        '../Jamtacular22_Group3/assets/img/PlayerSprites/KO/ko1.png'
     )
 
-    waterImg = loadImage('.../Jamtacular22_Group3/assets/img/items/water_bottle.png');
-    coffeeImg = loadImage('.../Jamtacular22_Group3/assets/img/items/ice_coffee_bottle.png');
-    beerImg = loadImage('.../Jamtacular22_Group3/assets/img/items/beer_bottle.png'); 
-    smoothieImg = loadImage('.../Jamtacular22_Group3/assets/img/items/old_smoothie.png');
-    canfoodImg = loadImage('.../Jamtacular22_Group3/assets/img/items/food_can_1.png');
-    pizzaImg = loadImage('.../Jamtacular22_Group3/assets/img/items/old_pizza.png');
+    waterImg = loadImage('../Jamtacular22_Group3/assets/img/items/water_bottle.png');
+    coffeeImg = loadImage('../Jamtacular22_Group3/assets/img/items/ice_coffee_bottle.png');
+    beerImg = loadImage('../Jamtacular22_Group3/assets/img/items/beer_bottle.png'); 
+    smoothieImg = loadImage('../Jamtacular22_Group3/assets/img/items/old_smoothie.png');
+    canfoodImg = loadImage('../Jamtacular22_Group3/assets/img/items/food_can_1.png');
+    pizzaImg = loadImage('../Jamtacular22_Group3/assets/img/items/old_pizza.png');
     
     // waterSound = loadSound('..assets/sound/drinkWater.mp3');
     // coffeeSound = loadSound('..assets/sound/gulp.mp3');
-    // beerSound = loadSound('.../Jamtacular22_Group3/assets/sound/beer.mp3');
+    // beerSound = loadSound('../Jamtacular22_Group3/assets/sound/beer.mp3');
     // smoothieSound = loadSound('..assets/sound/slurpSmoothie.mp3');
     // pizzaSound = loadSound('..assets/sound/crunchFood2.mp3');
     // canFoodSound = loadSound('..assets/sound/crunchFood.mp3');
