@@ -321,12 +321,12 @@ function preload() {
         '../Jamtacular22_Group3/assets/img/PlayerSprites/KO/ko1.png'
     )
 
-    waterImg = loadImage('../Jamtacular22_Group3/assets/img/items/water_bottle.png');
-    coffeeImg = loadImage('../Jamtacular22_Group3/assets/img/items/ice_coffee_bottle.png');
-    beerImg = loadImage('../Jamtacular22_Group3/assets/img/items/beer_bottle.png'); 
-    smoothieImg = loadImage('../Jamtacular22_Group3/assets/img/items/old_smoothie.png');
-    canfoodImg = loadImage('../Jamtacular22_Group3/assets/img/items/food_can_1.png');
-    pizzaImg = loadImage('../Jamtacular22_Group3/assets/img/items/old_pizza.png');
+    waterImg = loadImage('../Jamtacular22_Group3/assets/img/Items/water_bottle.png');
+    coffeeImg = loadImage('../Jamtacular22_Group3/assets/img/Items/ice_coffee_bottle.png');
+    beerImg = loadImage('../Jamtacular22_Group3/assets/img/Items/beer_bottle.png'); 
+    smoothieImg = loadImage('../Jamtacular22_Group3/assets/img/Items/old_smoothie.png');
+    canfoodImg = loadImage('../Jamtacular22_Group3/assets/img/Items/food_can_1.png');
+    pizzaImg = loadImage('../Jamtacular22_Group3/assets/img/Items/old_pizza.png');
     
     // waterSound = loadSound('..assets/sound/drinkWater.mp3');
     // coffeeSound = loadSound('..assets/sound/gulp.mp3');
