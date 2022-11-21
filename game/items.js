@@ -25,7 +25,7 @@ class item{
 
 //when character collides with item, item disappear and sound play
 
-class beer extends item{
+class Beer extends item{
     constructor(){
       super() //this calls the constructor in item
     }
@@ -43,20 +43,20 @@ class beer extends item{
   }
 
  
-  class coffee extends item{
+  class Coffee extends item{
     constructor(){
       super() //this calls the constructor in item
     }
     addSprite(x, y, size){
       this.itemSprite=createSprite;
       this.itemSprite.setCollider("circle", 0, 0, size, size);
-      this.itemSprite.addImage(beerImg);
+      this.itemSprite.addImage(coffeeImg);
     }
 
-    itemRemove(){
-        this.beerSound.play();
-        this.itemSprite.remove();
-        this.beerSound.stop();
-    }
+    // itemRemove(){
+    //     this.beerSound.play();
+    //     this.itemSprite.remove();
+    //     this.beerSound.stop();
+    // }
   }
  

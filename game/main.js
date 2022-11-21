@@ -11,6 +11,8 @@ let zombie1 = new Zombie(ZOMBIES[1].xPos, ZOMBIES[1].yPos);
 
 let enemiesOnScreen = 0;
 
+let coffee = new Coffee();
+
 
 //player sprite variables
 
@@ -346,6 +348,7 @@ function setup() {
     
     
     
+    
     //Animation Properties 
     //playerIdle.resize(playerSize.x, playerSize.y)
     //playerCrouch.resize(playerSize.x, playerSize.y)
@@ -367,6 +370,10 @@ function draw() {
     drawBorders();
 
     player.draw();
+
+    coffee.addSprite();
+
+
 
     // Dynamically draw zombies
     for (let i = 0; i < ZOMBIES.length; i++) {
